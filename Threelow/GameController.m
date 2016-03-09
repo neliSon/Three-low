@@ -1,13 +1,13 @@
 //
-//  Threelow.m
+//  GameController.m
 //  Threelow
 //
 //  Created by Nelson Chow on 2016-03-09.
 //  Copyright © 2016 Nelson Chow. All rights reserved.
 //
 
-#import "Threelow.h"
+#import "GameController.h"
 
-@implementation Threelow
+@implementation GameController
 
 @end

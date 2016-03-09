@@ -1,5 +1,5 @@
 //
-//  Threelow.h
+//  GameController.h
 //  Threelow
 //
 //  Created by Nelson Chow on 2016-03-09.
@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Threelow : NSObject
+@interface GameController : NSObject
 
 @end
