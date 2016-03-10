@@ -11,11 +11,16 @@
 
 @interface GameController : NSObject
 
+@property (nonatomic) int accumulator;
 @property NSMutableArray *die;
 @property NSMutableSet *heldDie;
 
+- (int) calculateScore;
+- (void) rollDice;
 - (void) holdDie: (int) index;
 - (void) resetDice;
+- (void) print;
+
 //- (void) addDie: (Dice *) newDice;
 
 

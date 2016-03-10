@@ -16,12 +16,7 @@
 {
     self = [super init];
     if (self) {
-//        Dice *dice1 = [[Dice alloc] init];
-//        Dice *dice2 = [[Dice alloc] init];
-//        Dice *dice3 = [[Dice alloc] init];
-//        Dice *dice4 = [[Dice alloc] init];
-//        Dice *dice5 = [[Dice alloc] init];
-        
+       
         _die = [NSMutableArray array];
         _heldDie = [NSMutableSet set];
         
@@ -29,19 +24,33 @@
              Dice *dice = [[Dice alloc] init];
             [self.die addObject: dice];
         }
-        
-        
-        
     }
     return self;
 }
 
+- (void) rollDice{
+    for (Dice *dice in self.die) {
+        if (![self.heldDie containsObject:dice]) {
+            [dice roll];
+            NSLog(@"Rolled %d", dice.diceValue);
+        } else {
+            NSLog(@"Held [%d]", dice.diceValue);
+        }
+    }
+}
+
 //  add dice if its not already in set, removes if it is.
 - (void) holdDie:(int)index {
-    if (![self.heldDie containsObject: self.die[index]]) {
-        [self.heldDie addObject: self.die[index]];
+    if (index <= _die.count && index >= 0) {
+        Dice *dice = self.die[index];
+    
+    if (![self.heldDie containsObject:dice]) {
+        [self.heldDie addObject: dice];
     }else {
-        [self.heldDie removeObject: self.die[index]];
+        [self.heldDie removeObject: dice];
+    }
+    }else {
+        NSLog(@"Invalid input.");
     }
 }
 
@@ -49,8 +58,28 @@
     [self.heldDie removeAllObjects];
 }
 
-//- (void) addDie: (Dice *) newDice {
-//    [self.die addObject : newDice];
-//}
+- (int) calculateScore {
+    for (Dice *dice in _heldDie) {
+        if (dice.diceValue != 3) {
+            _accumulator += dice.diceValue;
+        }
+    }
+    return _accumulator;
+}
+
+
+
+
+
+//  single method that prints all the dice values, held state, and the current score.
+
+- (void) print {
+//    Dice *dice = self.die;
+//
+//    NSLog(@"%d", dice.diceValue);
+    
+    
+}
+
 
 @end

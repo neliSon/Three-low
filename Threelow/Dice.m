@@ -10,10 +10,8 @@
 
 @implementation Dice
 
-
-- (void) rollDice {
-    self.diceValue = (arc4random() % 6) + 1;
-//    return self.diceValue;
+- (void) roll {
+    _diceValue = (arc4random() % 6) + 1;
 }
 
 @end
