@@ -12,8 +12,6 @@
 
 @property (nonatomic) int diceValue, points;
 
-- (int) rollDice;
-- (int) diceValue;
-- (int) points;
+- (void) rollDice;
 
 @end

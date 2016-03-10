@@ -10,11 +10,10 @@
 
 @implementation Dice
 
-@synthesize diceValue, points;
 
-- (int) rollDice {
-    diceValue = (arc4random() % 6) + 1;
-    return diceValue;
+- (void) rollDice {
+    self.diceValue = (arc4random() % 6) + 1;
+//    return self.diceValue;
 }
 
 @end

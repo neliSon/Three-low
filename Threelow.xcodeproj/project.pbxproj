@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1BE3B19E1C90B954005B1499 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3B19D1C90B954005B1499 /* main.m */; };
 		1BE3B1A91C90BA00005B1499 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3B1A81C90BA00005B1499 /* Dice.m */; };
-		1BE3B1AC1C90BC2B005B1499 /* Die.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3B1AB1C90BC2B005B1499 /* Die.m */; };
 		1BE3B1AF1C90C26C005B1499 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3B1AE1C90C26C005B1499 /* InputCollector.m */; };
 		1BE3B1B21C90CE69005B1499 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3B1B11C90CE69005B1499 /* GameController.m */; };
 /* End PBXBuildFile section */
@@ -31,8 +30,6 @@
 		1BE3B19D1C90B954005B1499 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1BE3B1A71C90BA00005B1499 /* Dice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
 		1BE3B1A81C90BA00005B1499 /* Dice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
-		1BE3B1AA1C90BC2B005B1499 /* Die.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Die.h; sourceTree = "<group>"; };
-		1BE3B1AB1C90BC2B005B1499 /* Die.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Die.m; sourceTree = "<group>"; };
 		1BE3B1AD1C90C26C005B1499 /* InputCollector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputCollector.h; sourceTree = "<group>"; };
 		1BE3B1AE1C90C26C005B1499 /* InputCollector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputCollector.m; sourceTree = "<group>"; };
 		1BE3B1B01C90CE69005B1499 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
@@ -72,8 +69,6 @@
 				1BE3B19D1C90B954005B1499 /* main.m */,
 				1BE3B1A71C90BA00005B1499 /* Dice.h */,
 				1BE3B1A81C90BA00005B1499 /* Dice.m */,
-				1BE3B1AA1C90BC2B005B1499 /* Die.h */,
-				1BE3B1AB1C90BC2B005B1499 /* Die.m */,
 				1BE3B1AD1C90C26C005B1499 /* InputCollector.h */,
 				1BE3B1AE1C90C26C005B1499 /* InputCollector.m */,
 				1BE3B1B01C90CE69005B1499 /* GameController.h */,
@@ -142,7 +137,6 @@
 				1BE3B19E1C90B954005B1499 /* main.m in Sources */,
 				1BE3B1AF1C90C26C005B1499 /* InputCollector.m in Sources */,
 				1BE3B1B21C90CE69005B1499 /* GameController.m in Sources */,
-				1BE3B1AC1C90BC2B005B1499 /* Die.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
